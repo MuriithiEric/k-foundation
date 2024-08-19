@@ -151,8 +151,32 @@
         width: 180px;
         display: inline-flex;
       }
+
+      .de-team-list:nth-child(5) {
+        margin-left: 65px; /* Adjust the value as needed */
+
+        height: 80px;
+        width: 60px;
+        display: inline-flex;
+      }
       .de-team-list {
         display: inline-flex;
+      }
+      .partners-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensures wrapping if there's not enough space */
+        justify-content: center; /* Centers the items */
+        gap: 20px; /* Adjust the space between items */
+      }
+
+      .partner-item {
+        flex: 0 1 auto; /* Allows items to shrink and grow as needed */
+      }
+
+      .partner-item img {
+        max-width: 120px; /* Adjust size as needed */
+        height: auto; /* Keeps aspect ratio */
+        display: block; /* Removes inline spacing */
       }
     </style>
   </head>
@@ -205,166 +229,31 @@
               <!-- small button close -->
 
               <!-- mainmenu begin -->
-              <nav class="md-flex">
+              <nav>
                 <ul id="mainmenu">
                   <li>
                     <div id="logo">
                       <a href="index.html">
                         <img
                           class="logo"
-                          src="images/logo.png"
-                          style="height: 35px; width: 50px; float: center"
+                          src="images/KF-logo-no-background.png"
+                          style="height: 35px; width: 50px"
                           alt=""
                         />
                       </a>
                     </div>
                     <a href="index.html">Home<span></span></a>
-                    <!-- <ul class="mega">
-                      <li>
-                        <div class="container-fluid">
-                          <div class="menu-content">
-                            <div class="row">
-                              <div>
-                                <ul>
-                                  <li>
-                                    <a href="index.html"
-                                      >Explore Our Services</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="index.html"
-                                      >Living in Kenya as an International
-                                      Student</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="why-Kenya.html">Why Kenya?</a>
-                    <ul class="mega">
-                      <li>
-                        <div class="container-fluid">
-                          <div class="menu-content">
-                            <div class="row">
-                              <div>
-                                <ul>
-                                  <li>
-                                    <a href="why-Kenya.html"
-                                      >Accommodation Costs in Kenya</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="why-Kenya.html"
-                                      >Average Monthly Expenses Breakdown</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>-->
                   </li>
 
                   <li>
                     <a href="about.html">About</a>
                   </li>
-                  <!-- <li>
-                    <a href="support-in-Kenya.html">Support in Kenya</a>
-                    <ul class="mega">
-                      <li>
-                        <div class="container-fluid">
-                          <div class="menu-content">
-                            <div class="row">
-                              <div>
-                                <ul>
-                                  <li>
-                                    <a href="support-in-Kenya.html"
-                                      >Application of a Pesel Number</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="support-in-Kenya.html"
-                                      >Registration of a Home Address</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="support-in-Kenya.html"
-                                      >Temporary Residence Card Application</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>-->
                   <li>
                     <a href="programs.html">Programs</a>
-                    <!-- <ul class="mega">
-                      <li>
-                        <div class="container-fluid">
-                          <div class="menu-content">
-                            <div class="row">
-                              <div>
-                                <ul>
-                                  <li>
-                                    <a href="sights.html">Cities</a>
-                                  </li>
-                                  <li>
-                                    <a href="sights.html">Group Activities</a>
-                                  </li>
-                                  <li>
-                                    <a href="sights.html">Historical Places</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul> -->
                   </li>
-                  <!--
-                  <li>
-                    <a href="faq.html">FAQ</a>
-                  </li>-->
                   <li>
                     <a href="contact.html">Contact Us</a>
-                    <!-- <ul class="mega">
-                      <li>
-                        <div class="container-fluid">
-                          <div class="menu-content">
-                            <div class="row">
-                              <div>
-                                <ul>
-                                  <li>
-                                    <a href="grading-system.html">Intakes</a>
-                                  </li>
-                                  <li>
-                                    <a href="grading-system.html"
-                                      >Polish Grading System</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul> -->
                   </li>
-                  </li> 
                 </ul>
               </nav>
 
@@ -392,7 +281,7 @@
                 data-thumb=""
               >
                 <!--  BACKGROUND IMAGE -->
-                <img src="./images/header1.jpg" alt="" />
+                <img src="./images/landing-page.png" alt="" />
                 <div
                   class="tp-caption small-white sfr"
                   data-x="0"
@@ -478,12 +367,12 @@
         <!-- revolution slider close -->
 
         <!-- section begin -->
-        <section id="section-no-bg" class="text-light" data-bgcolor="#6f798a">
+        <section id="section-no-bg" class="text-light" data-bgcolor="black">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-6">
                 <img
-                  src="images/misc/pic_12.jpg"
+                  src="images/home-page.png"
                   alt=""
                   class="img-responsive wow fadeInUp"
                   data-wow-duration="1.5s"
@@ -818,7 +707,7 @@
           </div>
         </section> -->
 
-        <section class="de_light" data-bgcolor="#ffffff">
+        <section class="de_light" data-bgcolor="#BBBBBB">
           <div class="wm">Easy Steps</div>
 
           <div class="container">
@@ -851,7 +740,7 @@
 
                   <div class="de_tab_content">
                     <div id="tab1">
-                      <a href="./contact.html" style="color: #fab702"
+                      <a href="./contact.html" style="color: #fff200"
                         >Promote</a
                       >
                       creative expression by supporting young creatives with
@@ -974,11 +863,8 @@
         <!-- section close -->
 
         <!-- section begin -->
-        <section
-          id="section-services"
-          class="text-light"
-          data-bgcolor="#464d58"
-        >
+        <section id="section-services" class="text-light" data-bgcolor="black">
+          <!-- changed from #464d58-->
           <div class="container">
             <div class="row">
               <div
@@ -1085,50 +971,85 @@
               </div>
 
               <div class="col-md-12 wow fadeInUp" data-wow-delay="0s">
-                <div class="col-md-12 container-4 wow fadeInUp">
-                  <div class="de-team-list">
-                    <div class="team-pic">
+                <div class="partners-container">
+                  <div class="partner-item">
+                    <a href="https://www.knls.ac.ke" target="_blank">
                       <img
                         src="images/knlslogo1.png"
-                        style="display: inline-flex"
                         class="img-responsive"
                         alt=""
                       />
-                    </div>
+                    </a>
                   </div>
-                  <div class="de-team-list">
-                    <div class="team-pic">
+
+                  <div class="partner-item">
+                    <a href="https://www.shieldintl.org" target="_blank">
                       <img
                         src="images/shield.png"
-                        style="display: inline-flex"
                         class="img-responsive"
                         alt=""
                       />
-                    </div>
+                    </a>
                   </div>
 
-                  <div class="de-team-list">
-                    <div class="team-pic">
+                  <div class="partner-item">
+                    <a href="https://mwarv.click.co.ke/" target="_blank">
+                      <img
+                        src="images/mwarv.png"
+                        class="img-responsive"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+
+                  <div class="partner-item">
+                    <a href="https://www.workify-africa.com/" target="_blank">
+                      <img
+                        src="images/workify.jpeg"
+                        class="img-responsive"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+
+                  <div class="partner-item">
+                    <a
+                      href="https://christianministriesinafrica.org/"
+                      target="_blank"
+                    >
                       <img
                         src="images/cmia.png"
-                        style="display: inline-flex"
                         class="img-responsive"
                         alt=""
                       />
-                    </div>
-                  </div>
-                  <div class="de-team-list">
-                    <div class="team-pic">
-                      <img
-                        src="images/shutterhub.jpg"
-                        style="display: inline-flex"
-                        class="img-responsive"
-                        alt=""
-                      />
-                    </div>
+                    </a>
                   </div>
 
-                  <div class="clearfix"></div>
+                  <div class="partner-item">
+                    <a
+                      href="https://shutterhub.org.uk/camera-amnesty/"
+                      target="_blank"
+                    >
+                      <img
+                        src="images/shutterhub.jpg"
+                        class="img-responsive"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+
+                  <div class="partner-item">
+                    <a
+                      href="https://www.instagram.com/cgenpix_creatives/"
+                      target="_blank"
+                    >
+                      <img
+                        src="images/cgen.png"
+                        class="img-responsive"
+                        alt=""
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1194,7 +1115,7 @@
           id="view-all-projects"
           class="call-to-action text-light padding40"
           aria-label="cta"
-          data-bgcolor="#6f798a"
+          data-bgcolor="#111111"
         >
           <div class="container">
             <div class="row align-items-center">
@@ -1205,7 +1126,10 @@
               </div>
 
               <div class="col-md-4 text-right">
-                <a href="#" target="_blank" class="btn-custom wow fadeInUp"
+                <a
+                  href="./about.html"
+                  target="_blank"
+                  class="btn-custom wow fadeInUp"
                   >Learn More</a
                 >
               </div>
@@ -1257,9 +1181,9 @@
               <div class="widget widget_recent_post">
                 <h3>Our Goals</h3>
                 <ul>
-                  <li><a href="#">Create</a></li>
-                  <li><a href="#">Innovate</a></li>
-                  <li><a href="#">Thrive</a></li>
+                  <li><a href="index.html">Create</a></li>
+                  <li><a href="index.html">Innovate</a></li>
+                  <li><a href="index.html">Thrive</a></li>
                 </ul>
               </div>
             </div>
